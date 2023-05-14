@@ -1,3 +1,6 @@
 @import 'sidebar.module.css';
 @import 'navbar.module.css';
 @import 'post.module.css';
+.rightpane {
+  padding: 20px;
+}

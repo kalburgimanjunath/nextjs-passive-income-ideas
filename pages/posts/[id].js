@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-
+import Image from 'next/image';
+import { Footerbutton } from '../../components/';
 import { getAllPosts, getPostById } from '../api/services/posts.services';
 export default function index() {
   const [posts, setPosts] = useState([]);
@@ -24,13 +25,33 @@ export default function index() {
   });
   return (
     <div>
-      Post:{id}
+      {/* Post:{id} */}
       <>
         <div>
           {posts && posts.length > 0 ? (
             <div>
               {posts.map((item) => {
-                return <div>{item.title}</div>;
+                return (
+                  <>
+                    <div>
+                      <Image
+                        loader={() => item.url}
+                        src={item.url}
+                        width="200"
+                        height="200"
+                        alt=""
+                        style={{ width: '100%' }}
+                      />
+                    </div>
+                    <h4>{item.title}</h4>
+
+                    <div>
+                      <h6>Published at {item.created_at}</h6>
+                    </div>
+                    <div>{item.description}</div>
+                    <Footerbutton />
+                  </>
+                );
               })}
             </div>
           ) : (

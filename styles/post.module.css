@@ -8,3 +8,17 @@
   border-radius: 10px;
   margin: 10px 0;
 }
+
+.footerbutton {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerbutton .left,
+.footerbutton .right {
+  padding: 5px;
+}
+.footerbutton .left span,
+.footerbutton .right span {
+  margin: 10px;
+}
