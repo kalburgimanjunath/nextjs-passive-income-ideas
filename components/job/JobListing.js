@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 export default function JobListing({ jobs }) {
   const JobsTemplate = ({ item }) => {
     return (
       <>
-        <div>
-          <h6>{item.job_title}</h6> at {item.company_name}
-        </div>
+        <Link href={`../jobs/${item.id}`}>
+          <div>
+            <h6>{item.job_title}</h6> at {item.company_name}
+          </div>
+        </Link>
         <div>{item.company_address}</div>
         <div>{item.location}</div>
         <div>{item.notice_period}</div>
