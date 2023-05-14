@@ -26,7 +26,7 @@ export default function index() {
   }, [id]);
   return (
     <div>
-      Category:{id}
+      {id}
       <div>
         {banners && (
           <Image
@@ -34,6 +34,7 @@ export default function index() {
             src={banners}
             width={500}
             height={300}
+            style={{ width: '100%' }}
           />
         )}
         <h6>PUBLICATIONS</h6>

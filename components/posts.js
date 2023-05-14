@@ -7,7 +7,7 @@ export default function Posts({ posts }) {
       <div className="lists-item post">
         <>
           <Link href={`../posts/${item.id}`}>
-            <div>{item.author}</div>
+            {/* <div>{item.author}</div> */}
             <div>
               <Image
                 loader={() => item.url}
@@ -15,6 +15,7 @@ export default function Posts({ posts }) {
                 width="200"
                 height="200"
                 alt=""
+                style={{ width: '100%' }}
               />
             </div>
 
