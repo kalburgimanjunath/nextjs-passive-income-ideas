@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Footerbutton } from '../../components/';
 import { getAllPosts, getPostById } from '../api/services/posts.services';
+// import Speech from 'react-speech';
 export default function index() {
   const [posts, setPosts] = useState([]);
   const router = useRouter();
@@ -26,6 +27,7 @@ export default function index() {
   return (
     <div>
       {/* Post:{id} */}
+
       <>
         <div>
           {posts && posts.length > 0 ? (
@@ -44,11 +46,12 @@ export default function index() {
                       />
                     </div>
                     <h4>{item.title}</h4>
-
+                    <Footerbutton />
                     <div>
                       <h6>Published at {item.created_at}</h6>
                     </div>
                     <div>{item.description}</div>
+
                     <Footerbutton />
                   </>
                 );

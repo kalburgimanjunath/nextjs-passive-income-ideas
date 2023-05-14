@@ -20,7 +20,11 @@ export default function Posts({ posts }) {
             </div>
 
             <h4>{item.title}</h4>
-            <div>{item.description}</div>
+            <div>
+              {item.description.length > 256
+                ? item.description.substring(1, 256) + '...more'
+                : item.description}
+            </div>
 
             <div>
               <h6>Published at {item.created_at}</h6>

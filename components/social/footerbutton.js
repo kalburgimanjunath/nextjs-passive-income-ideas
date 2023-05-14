@@ -7,10 +7,14 @@ export default function Footerbutton() {
     <div className="footerbutton">
       <div className="left">
         <span onClick={() => setLikes(likes + 1)}>Like/Clap {likes}</span>
-        <span onClick={() => setComments(comments + 1)}>Comment {comments}</span>
+        <span onClick={() => setComments(comments + 1)}>
+          Comment {comments}
+        </span>
       </div>
       <div className="right">
-      <span onClick={() => setBookmarks(bookmarks + 1)}>Bookmark {bookmarks}</span>
+        <span onClick={() => setBookmarks(bookmarks + 1)}>
+          Bookmark {bookmarks}
+        </span>
         <span>Play</span>
         <span>Share</span>
         <span>more</span>
