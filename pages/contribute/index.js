@@ -14,8 +14,9 @@ export default function index() {
     const url = `https://api.airtable.com/v0/appkjlwWrVqVpSC7i/allposts`;
     const requestOptions = {
       method: 'POST',
+      mode: 'cors',
       headers: {
-        'Content-Type': 'multipart/json',
+        'Content-Type': 'application/json',
         Authorization: 'Bearer keyeNXyxxuuYJY19w',
       },
       body: JSON.stringify(data),
@@ -60,8 +61,10 @@ export default function index() {
           }}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
-              // alert(JSON.stringify(values, null, 2));
-              saveData({ fields: values });
+              alert({ fields: values });
+              saveData({
+                fields: values,
+              });
               setSubmitting(false);
             }, 400);
           }}
@@ -101,7 +104,6 @@ export default function index() {
                 placeholder="content"
               />
               <ErrorMessage name="content" component="div" />
-
               <Field
                 type="text"
                 name="tags"
@@ -110,7 +112,6 @@ export default function index() {
                 placeholder="tags"
               />
               <ErrorMessage name="tags" component="div" />
-
               <Field
                 type="text"
                 name="category"
