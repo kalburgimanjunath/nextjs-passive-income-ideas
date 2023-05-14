@@ -61,7 +61,7 @@ export default function index() {
           }}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
-              alert({ fields: values });
+              alert('Successfully posted');
               saveData({
                 fields: values,
               });
