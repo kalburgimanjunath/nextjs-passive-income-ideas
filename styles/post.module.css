@@ -1,0 +1,10 @@
+.post {
+  border: 1px solid #d7d7d7 !important;
+}
+.posts {
+  border: 0px solid #d7d7d7;
+}
+.posts .lists-item.post {
+  border-radius: 10px;
+  margin: 10px 0;
+}

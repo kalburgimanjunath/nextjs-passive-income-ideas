@@ -1,0 +1,44 @@
+.navbar-top {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 -1px 0 0 #303030;
+}
+.navbar-start {
+  width: 20%;
+  padding: 20px 10px;
+}
+.navbar-end {
+  width: 70%;
+}
+.navbar-end ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-end ul li {
+  background-color: bisque;
+  margin: 2px;
+  width: 15%;
+  display: flex;
+  min-width: 130px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.navbar-end ul li:hover {
+  background-color: blue;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar-end ul li:hover a {
+  color: white;
+}
+.navbar-end ul li:nth-child(3) {
+  min-width: 180px;
+}
+.navbar-end ul li a {
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 14x;
+  color: blue;
+}
