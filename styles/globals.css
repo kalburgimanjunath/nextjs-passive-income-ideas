@@ -16,7 +16,7 @@ a {
   box-sizing: border-box;
 }
 .footer-menu {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   bottom: 0px;
   display: flex;
@@ -26,4 +26,10 @@ a {
 }
 .footer-menu span {
   padding: 20px;
+}
+.detailed-ellipsis {
+  display: flex;
+  font-size: 42px;
+  justify-content: center;
+  color: #d6d6d6;
 }

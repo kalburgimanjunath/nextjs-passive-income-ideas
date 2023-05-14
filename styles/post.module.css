@@ -22,3 +22,14 @@
 .footerbutton .right span {
   margin: 10px;
 }
+.post-tags {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.post-tags span {
+  background-color: #d7d7d7;
+  margin: 2px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}

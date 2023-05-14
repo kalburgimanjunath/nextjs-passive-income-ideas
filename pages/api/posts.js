@@ -39,6 +39,7 @@ Adrienne Gibbs
 Director, Creator Growth @ Medium`,
       author: 1,
       url: 'https://picsum.photos/seed/picsum/200/300',
+      tags: ['passive', 'money', 'content'],
       created_at: '10-10-2023',
     },
     {

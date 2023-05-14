@@ -51,7 +51,16 @@ export default function index() {
                       <h6>Published at {item.created_at}</h6>
                     </div>
                     <div>{item.description}</div>
-
+                    <div className="detailed-ellipsis">...</div>
+                    <div className="post-tags">
+                      {item.tags ? (
+                        <div>
+                          {item.tags.map((tag) => (
+                            <span>{tag}</span>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
                     <Footerbutton />
                   </>
                 );
